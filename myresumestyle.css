@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f9ffa1;
+}
+/* top */
+#top {
+    background-image: url(myresume/top.jpg);
+    background-repeat: no-repeat;
+    height:200px; 
+}
+#flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mynames {
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Lobster', cursive;
+    color: #d3c99b;
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+/* Navigation */
+#nav {
+    height: 40px;
+    text-align: center;
+    background-color: #1a0c02;
+    box-shadow: 0 0 4px 3px;
+    z-index: 1000;
+}
+#nav>nav {
+    display: flex;
+    margin-top: 11px;
+    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    color: #d8b92e;
+}
+a:hover {
+    color: #e9d372;
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+a:active {
+    color: #d8b92e;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 45, 45);
+}
+/* for me */
+#info {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 900;
+}
+#aboutme p {
+    text-indent: 1.5em;
+    text-align: justify;
+}
+#aboutme {
+    width: 300px;
+    padding-left: 50px;
+    font-family: 'Marmelad', sans-serif;
+}
+.avatar {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 50%/40%;
+    box-shadow: 0 0 10px 5px#1a0c02;
+}
+/* education */
+#education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    align-content: center;
+    align-items: center;
+    overflow: auto;
+}
+#education h1 {
+    width: 200px;
+}
+#nkntu {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-indent: 1.5em;
+    text-align: justify;
+    align-items: center;
+}
+.nkntuimg {
+    width: 60px;
+    height: 50px;
+    border-radius: 50%/50%;
+
+}
