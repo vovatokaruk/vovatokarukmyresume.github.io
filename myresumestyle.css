@@ -6,6 +6,7 @@ body {
     background-color: #f9ffa1;
 }
 
+
 /* top */
 #top {
     background-image: url(myresume/top.jpg);
@@ -128,13 +129,25 @@ a:active {
        text-align: center;
     }}
 
+    @keyframes bordera {
+        to {border-radius: 50%/40%}
+    }
+    
+    @keyframes hover-scale {
+    to{transform: scale(1.2);}  
+}
 .avatar {
     padding: 5px;
    height: 350px;
    width: 250px;
-    border-radius: 50%/40%;
-    
+    /* border-radius: 50%/40%; */
+    animation-name: bordera;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
+
+
 @media screen and (max-device-width: 480px) {
     .avatar {
        height: 200px;
@@ -177,12 +190,13 @@ a:active {
 
 /* my skills */
 #myskills {
-    margin: 20px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
+    background-color: #d4da8a;
 }
 
 #html-css-logo {
@@ -206,3 +220,56 @@ a:active {
     height: 120px;
     width: 100px;
 }}
+
+.my-skil {
+    font-family: 'Lobster', cursive;
+    
+}
+.my-skil-ani {
+    font-family: 'Lobster', cursive;
+    animation: linear-rgt 2s ease-in forwards;
+}
+
+@keyframes linear-rgt {
+    0% {
+        transform: translateX(-150%);
+    }
+    50%{
+        transform: translateX(8%);
+    }
+    65%{
+        transform: translateX(-4%);
+    }
+    80%{
+        transform: translateX(4%);
+    }
+    95%{
+        transform: translateX(-2%);
+    }           
+    100% {
+        transform: translateX(0%);
+    }   
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    50%{
+        transform: translateY(-8%);
+    }
+    65%{
+        transform: translateY(4%);
+    }
+    80%{
+        transform: translateY(-4%);
+    }
+    95%{
+        transform: translateY(2%);
+    }           
+    100% {
+        transform: translateY(0%);
+    }   
+}
+.html-css-js-logo-anim {
+    animation: slideUp 2s ease-in forwards;
+}
